@@ -27,6 +27,10 @@ export class AppComponent {
     }
   }
 
+  onSubmit() {
+    console.log(this.vehicleListForm.getRawValue());
+  }
+
   get vehicles() {
     return this.vehicleListForm.get('vehicles') as FormArray;
   }
